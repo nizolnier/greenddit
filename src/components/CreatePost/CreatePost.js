@@ -23,15 +23,15 @@ function CreatePost(props) {
                 <Avatar src={`https://avatars.dicebear.com/api/avataaars/${username}.svg`} />
                 <Heading size="xs" pl="0.4em">u/{username}</Heading>
             </UserThings>
-            <Heading size="lg" textAlign="center" pb="0.2em">Crie seu post</Heading>
+            <Heading size="lg" textAlign="center" pb="0.2em">Create a Post</Heading>
             <FormContainer onSubmit={handleSubmission}>
                 <FormControl id="title">
-                    <Input required placeholder="Insira um título para o seu post" onChange={onChange} value={form.title} name="title" />
+                    <Input required placeholder="Title" onChange={onChange} value={form.title} name="title" />
                 </FormControl>
                 <FormControl id="text">
-                    <Textarea borderRadius="lg" size="sm" required placeholder="Insira o texto do seu post" onChange={onChange} value={form.text} name="text" />
+                    <Textarea borderRadius="lg" size="sm" required placeholder="Text" onChange={onChange} value={form.text} name="text" />
                 </FormControl>
-                <Button colorScheme="blue" variant="solid" type="submit">POSTAR</Button>
+                <Button colorScheme="blue" variant="solid" type="submit">POST</Button>
             </FormContainer>
         </LoginContainer>
     </StyledBox>

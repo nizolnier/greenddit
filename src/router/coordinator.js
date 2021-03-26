@@ -1,5 +1,5 @@
 export const goToSignUp = (history) => {
-    history.push("/cadastrar")
+    history.push("/signup")
 }
 
 export const goToFeed = (history) => {

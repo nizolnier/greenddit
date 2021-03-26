@@ -11,7 +11,7 @@ export const login = (body, history, setLoading) => {
     goToFeed(history)
   }).catch((err) => {
     setLoading(false)
-    window.alert("Email ou senha incorretos!")
+    window.alert("Incorrect email or password!")
   })
 }
 
@@ -24,6 +24,6 @@ export const signUp = (body, history, setLoading) => {
     goToFeed(history)
   }).catch((err) => {
     setLoading(false)
-    window.alert("Ops! Acho que já existe um usuário com algum desses dados")
+    window.alert("Whops! I think there's already an user with some of this information!")
   })
 }
