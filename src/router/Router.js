@@ -15,7 +15,7 @@ function Router() {
                     <Header />
                     <LoginPage />
                 </Route>
-                <Route exact path="/cadastrar">
+                <Route exact path="/signup">
                     <Header />
                     <SignUpPage />
                 </Route>

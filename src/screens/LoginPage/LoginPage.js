@@ -32,24 +32,24 @@ function LoginPage() {
                 pointerEvents="none"
                 children={<EmailIcon color="gray.300" />}
               />
-              <Input required placeholder="Digite seu email" type="email" onChange={onChange} value={form.email} name="email" />
+              <Input required placeholder="Type your email" type="email" onChange={onChange} value={form.email} name="email" />
             </InputGroup>
           </FormControl>
           <FormControl id="password">
-            <FormLabel>Senha</FormLabel>
+            <FormLabel>Password</FormLabel>
             <InputGroup>
               <InputLeftElement
                 pointerEvents="none"
                 children={<LockIcon color="gray.300" />}
               />
-              <Input required placeholder="Digite sua senha" type="password" value={form.password} onChange={onChange} name="password" />
+              <Input required placeholder="Type your password" type="password" value={form.password} onChange={onChange} name="password" />
             </InputGroup>
           </FormControl>
-          <Button isLoading={loading} colorScheme="teal" variant="solid" type="submit">Login</Button>
+          <Button isLoading={loading} colorScheme="teal" variant="solid" type="submit">Log in</Button>
         </FormContainer>
         <Message>
-          <h1>Novo ao Greenddit?</h1>
-          <Anchor onClick={() => goToSignUp(history)}>Cadastre-se!</Anchor>
+          <h1>New to Greenddit?</h1>
+          <Anchor onClick={() => goToSignUp(history)}>Sign up!</Anchor>
         </Message>
       </LoginContainer>
     </MainContainer>

@@ -5,9 +5,9 @@ import { MainContainer } from './styled'
 function ErrorPage() {
   return (
     <MainContainer>
-      <Heading size="xl">Ops, não tem nada aqui!</Heading>
-      <Text p="1em" fontSize="xl" textAlign="center">O que você estava procurando não existe nesse endereço. <br></br>
-      A não ser que você estava procurando por essa página de erro, nesse caso: <br></br> Parabéns! Você a encontrou!</Text>
+      <Heading size="xl">There's nothing here!</Heading>
+      <Text p="1em" fontSize="xl" textAlign="center">Whatever you were looking for doesn't currently exist at this address. <br></br>
+      Unless you were looking for this error page, in which case: <br></br> Congrats! You totally found it!</Text>
     </MainContainer>
   );
 }

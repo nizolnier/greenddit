@@ -14,7 +14,7 @@ function Header() {
   const username = localStorage.getItem("username")
 
   const logout = () => {
-    const beSure = window.confirm("Você tem certeza que quer sair da conta?")
+    const beSure = window.confirm("Are you sure you want to log out?")
     if (beSure) {
       localStorage.removeItem("token");
       goToLogin(history)
@@ -50,7 +50,7 @@ function Header() {
     return (<HeaderContainer>
       <Logo src={logo} />
       <ButtonsContainer>
-        <Button colorScheme="blue" onClick={() => goToSignUp(history)}>Cadastrar</Button>
+        <Button colorScheme="blue" onClick={() => goToSignUp(history)}>Sign up</Button>
         <Button ml="1em" colorScheme="blue" variant="outline" onClick={() => goToLogin(history)}>Log in</Button>
       </ButtonsContainer>
     </HeaderContainer>)

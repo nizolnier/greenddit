@@ -12,7 +12,7 @@ function SearchBar() {
 
     return (<div>
         <InputGroup>
-            <Input onChange={onChange} value={search} placeholder="Pesquisar" />
+            <Input onChange={onChange} value={search} placeholder="Search" />
             <InputRightElement children={<Search2Icon color="gray.300" />} />
         </InputGroup>
     </div>

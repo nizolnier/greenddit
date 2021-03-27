@@ -7,10 +7,10 @@ export const createPost = (body, update) => {
             Authorization: localStorage.getItem("token")
         }
     }).then((res) => {
-        window.alert("Post criado com sucesso!")
         update()
+        window.alert("Post created with success!")
     }).catch((err) => {
-      window.alert("Ih deu erro!")
+      window.alert("Whops, there's an error!")
     })
 }
 
@@ -20,10 +20,10 @@ export const createComment = (body, postId, update) => {
             Authorization: localStorage.getItem("token")
         }
     }).then((res) => {
-        window.alert("Comentário criado com sucesso!")
         update()
+        window.alert("Comment created with success!")
     }).catch((err) => {
-      window.alert("Ih deu erro!")
+      window.alert("Whops, there's an error!")
       console.log(err)
     })
 }
@@ -36,7 +36,7 @@ export const votePost = (body, postId, update) => {
     }).then((res) => {
         update()
     }).catch((err) => {
-      window.alert("Não foi, você poderia clicar novamente?")
+      window.alert("That didn't work, could you click again?")
       console.log(err)
     })
 
@@ -50,7 +50,7 @@ export const voteComment = (body, postId, commentId, update) => {
     }).then((res) => {
         update()
     }).catch((err) => {
-      window.alert("Não foi, você poderia clicar novamente?")
+      window.alert("That didn't work, could you click again?")
       console.log(err)
     })
 

@@ -22,9 +22,9 @@ function CreateComment(props) {
         </UserThings>
         <FormContainer onSubmit={handleSubmission}>
             <FormControl id="text">
-                <Textarea required placeholder="Insira um comentário" onChange={onChange} value={form.text} name="text" />
+                <Textarea required placeholder="Add a comment" onChange={onChange} value={form.text} name="text" />
             </FormControl>
-            <Button p="1.5em" colorScheme="blue" variant="solid" type="submit">COMENTAR</Button>
+            <Button p="1.5em" colorScheme="blue" variant="solid" type="submit">COMMENT</Button>
         </FormContainer>
     </CreateContainer>
 

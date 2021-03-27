@@ -24,7 +24,7 @@ function SignUpPage() {
     <MainContainer>
       <SignUpContainer borderWidth="1px" borderRadius="lg">
         <Logo src={alien} />
-        <Heading textAlign="center" p="0.2em">Cadastre-se</Heading>
+        <Heading textAlign="center" p="0.2em">Sign up</Heading>
         <FormContainer onSubmit={handleSubmission}>
           <FormControl id="username">
             <FormLabel>Username</FormLabel>
@@ -33,7 +33,7 @@ function SignUpPage() {
                 pointerEvents="none"
                 children={<AtSignIcon color="gray.300" />}
               />
-              <Input required placeholder="Crie um username" value={form.username} onChange={onChange} name="username" />
+              <Input required placeholder="Create a username" value={form.username} onChange={onChange} name="username" />
             </InputGroup>
           </FormControl>
           <FormControl id="email">
@@ -43,24 +43,24 @@ function SignUpPage() {
                 pointerEvents="none"
                 children={<EmailIcon color="gray.300" />}
               />
-              <Input required placeholder="Digite seu email" type="email" onChange={onChange} value={form.email} name="email" />
+              <Input required placeholder="Type your email" type="email" onChange={onChange} value={form.email} name="email" />
             </InputGroup>
 
           </FormControl>
           <FormControl id='password'>
-            <FormLabel>Senha</FormLabel>
+            <FormLabel>Password</FormLabel>
             <InputGroup>
               <InputLeftElement
                 pointerEvents="none"
                 children={<LockIcon color="gray.300" />}
               />
-              <Input required placeholder="Digite uma senha" type={"password"} value={form.password} onChange={onChange} name="password" />
+              <Input required placeholder="Type a password" type={"password"} value={form.password} onChange={onChange} name="password" />
             </InputGroup>
           </FormControl>
-          <Button isLoading={loading} colorScheme="teal" variant="solid" type="submit">CADASTRAR</Button>
+          <Button isLoading={loading} colorScheme="teal" variant="solid" type="submit">Sign up</Button>
         </FormContainer>
         <Message>
-          <h1>Já possui conta?</h1>
+          <h1>Already has an account?</h1>
           <Anchor onClick={() => goToLogin(history)}>Log in!</Anchor>
         </Message>
       </SignUpContainer>
