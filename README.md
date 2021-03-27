@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="./src/assets/alien.svg"  alt="logo astromatch" width="200"></a>
+  <a href="https://greenddit-nz.surge.sh/"><img src="./src/assets/alien.svg"  alt="logo astromatch" width="200"></a>
   <br>
   Greenddit
   <br>
@@ -9,7 +9,7 @@
 <a id="en-readme"></a>
 ## English | [Português](#pt-readme)
 
-[Greenddit]() is a front-end project developed at Labenu's bootcamp and it is based on Reddit.
+[Greenddit](https://greenddit-nz.surge.sh/) is a front-end project developed at Labenu's bootcamp and it is based on Reddit.
 
 The back page of the internet! Create posts, comment and vote.
 
@@ -43,7 +43,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <a id="pt-readme"></a>
 ## [English](#en-readme) | Português
-[Greenddit]() é um projeto front-end feito no bootcamp da Labenu e baseado no Reddit.
+
+[Greenddit](https://greenddit-nz.surge.sh/) é um projeto front-end feito no bootcamp da Labenu e baseado no Reddit.
 
 The back page of the internet! Crie posts, comente e vote neles.
 
