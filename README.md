@@ -11,7 +11,7 @@
 
 [Greenddit](https://greenddit-nz.surge.sh/) is a front-end project developed at Labenu's bootcamp and it is based on Reddit.
 
-The back page of the internet! Create posts, comment and vote.
+The back page of the internet! Create posts, comment and vote. 🤩
 
 This application uses an API developed by Labenu.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
