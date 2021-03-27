@@ -11,7 +11,7 @@
 
 [Greenddit]() is a front-end project developed at Labenu's bootcamp and it is based on Reddit.
 
-Create posts, comment and vote!
+The back page of the internet! Create posts, comment and vote.
 
 This application uses an API developed by Labenu.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -45,7 +45,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## [English](#en-readme) | Português
 [Greenddit]() é um projeto front-end feito no bootcamp da Labenu e baseado no Reddit.
 
-Crie posts, comente e vote neles!
+The back page of the internet! Crie posts, comente e vote neles.
 
 Esse projeto utiliza uma API desenvolvida pela Labenu. Projeto desenvolvido com [Create React App](https://github.com/facebook/create-react-app).
 

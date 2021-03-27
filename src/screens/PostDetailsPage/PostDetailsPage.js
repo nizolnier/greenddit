@@ -22,31 +22,28 @@ function PostDetailsPage() {
 
   const [{ post }, update] = useRequestData(`/posts/${params.id}`)
 
-  const handleVote = (decision) => {
-    const body = {
-      direction: decision,
-    }
-    votePost(body, params.id, update)
+  const handleVote = (direction) => {
+    votePost({direction}, params.id, update)
   }
 
   const arrow = () => {
     if (post.userVoteDirection === 0) {
       return (<>
-        <Arrow src={greyUp} onClick={() => handleVote(1)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredUp)} onMouseOut={(e) => (e.currentTarget.src = greyUp)} src={greyUp} onClick={() => handleVote(1)} />
         <Heading size="md">{post.votesCount}</Heading>
-        <Arrow src={greyDown} onClick={() => handleVote(-1)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredDown)} onMouseOut={(e) => (e.currentTarget.src = greyDown)} src={greyDown} onClick={() => handleVote(-1)} />
       </>)
     } else if (post.userVoteDirection === 1) {
       return (<>
-        <Arrow src={coloredUp} onClick={() => handleVote(0)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = greyUp)} onMouseOut={(e) => (e.currentTarget.src = coloredUp)} src={coloredUp} onClick={() => handleVote(0)} />
         <Heading size="md">{post.votesCount}</Heading>
-        <Arrow src={greyDown} onClick={() => handleVote(-1)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredDown)} onMouseOut={(e) => (e.currentTarget.src = greyDown)} src={greyDown} onClick={() => handleVote(-1)} />
       </>)
     } else {
       return (<>
-        <Arrow src={greyUp} onClick={() => handleVote(1)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredUp)} onMouseOut={(e) => (e.currentTarget.src = greyUp)} src={greyUp} onClick={() => handleVote(1)} />
         <Heading size="md">{post.votesCount}</Heading>
-        <Arrow src={coloredDown} onClick={() => handleVote(0)} />
+        <Arrow onMouseOver={(e) => (e.currentTarget.src = greyDown)} onMouseOut={(e) => (e.currentTarget.src = coloredDown)} src={coloredDown} onClick={() => handleVote(0)} />
       </>)
     }
   }

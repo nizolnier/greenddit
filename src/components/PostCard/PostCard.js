@@ -14,11 +14,8 @@ import coloredDown from '../../assets/colored-down.svg'
 function PostCard(props) {
     const history = useHistory()
 
-    const handleVote = (decision) => {
-        const body = {
-            direction: decision,
-        }
-        votePost(body, props.id, props.update)
+    const handleVote = (direction) => {
+        votePost({direction}, props.id, props.update)
     }
 
     const arrow = () => {
@@ -32,7 +29,7 @@ function PostCard(props) {
             </>)
         } else if (props.direction === 1) {
             return (<>
-                <Arrow src={coloredUp} onClick={() => handleVote(0)} />
+                <Arrow onMouseOver={(e) => (e.currentTarget.src = greyUp)} onMouseOut={(e) => (e.currentTarget.src = coloredUp)} src={coloredUp} onClick={() => handleVote(0)} />
                 <Heading size="md">{props.votesCount}</Heading>
                 <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredDown)}
                     onMouseOut={(e) => (e.currentTarget.src = greyDown)} src={greyDown} onClick={() => handleVote(-1)} />
@@ -42,7 +39,7 @@ function PostCard(props) {
                 <Arrow onMouseOver={(e) => (e.currentTarget.src = coloredUp)}
                     onMouseOut={(e) => (e.currentTarget.src = greyUp)} src={greyUp} onClick={() => handleVote(1)} />
                 <Heading size="md">{props.votesCount}</Heading>
-                <Arrow src={coloredDown} onClick={() => handleVote(0)} />
+                <Arrow onMouseOver={(e) => (e.currentTarget.src = greyDown)} onMouseOut={(e) => (e.currentTarget.src = coloredDown)} src={coloredDown} onClick={() => handleVote(0)} />
             </>)
         }
     }

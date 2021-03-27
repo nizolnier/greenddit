@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   background-color: white;
   height: 8vh;
+  width: 90vw;
   align-items: center;
   margin: 0 1em;
   @media screen and (min-device-width : 320px) and (max-device-width : 420px) {
@@ -35,7 +36,7 @@ export const HomeContainer = styled.div`
 `
 
 export const HomeIcon = styled.img`
-    width: 12%;
+    width: 15%;
     margin-right: 0.5em;
     @media screen and (min-device-width : 320px) and (max-device-width : 420px) {
     display: none;
